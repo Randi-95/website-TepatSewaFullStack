@@ -1,4 +1,4 @@
- <?php
+<?php
 // Koneksi ke database
 include './service/database.php';
 
@@ -16,6 +16,9 @@ $result = mysqli_query($db, $sql);
 
     <!-- Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -81,17 +84,21 @@ $result = mysqli_query($db, $sql);
 
     <!-- hero section start -->
     <section id="branda" class="pt-20 lg:pt-[0] lg:px-[5rem] bg-white">
-        <div class="container">
+        <div class="container" data-aos="fade-right"  data-aos-duration="1000">
           <div class="flex flex-wrap">
             <div class="w-full self-center px-4 sm:w-1/2">
+              <div class="" data-aos="fade-right">
                 <h1 class="font-[700] text-[10px] text-[#000] sm:text-[15px]">Selamat Datang di <br> <span class="text-[#0284c7] font-[800] text-[20px]">Tepat Sewa!👌</span></h1>
                 <h2 class="font-[500] text-[12px] text-[#000] sm:text-[17px]">Tempat Sewa Mobil || Terbaik</h2>
                 <p class="font-[200] w-[50%] text-[10px] sm:text-[15px] text-[#000] leading-[1.2rem] mb-2">Sewa mobil terbaik dengan layanan cepat, kendaraan berkualitas, dan harga bersahabat. Mulai perjalanan Anda bersama kami hari ini!</p>
                 <a href="#" class="text-[#fff] text-[10px]  font-[600] bg-[#0284c7] px-3 py-2 rounded-[20px] hover:bg-[#6eaecb] duration-[0.3s] ease-in">Selengkapnya</a>
+                </div>
             </div>
             <div class="w-full self-end px-4 sm:w-1/2">
-              <div class="mt-10">
-                <img src="./assets/foto.png" alt="" class="max-w-full mx-auto">
+              <div class="" data-aos="fade-left">
+                <div class="mt-10" data-aos="fade-left"  data-aos-duration="1500">
+                  <img src="./assets/foto.png" alt="" class="max-w-full mx-auto">
+                </div>
               </div>
             </div>
           </div>
@@ -107,29 +114,33 @@ $result = mysqli_query($db, $sql);
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4">
-            <div class="judul-about">
+            <div class="judul-about" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <h1 class="flex justify-center pt-[60px] font-[800] text-[1rem] text-[#0284c7] sm:text-[1.5rem] lg:text-[1.8rem] sm:pt-[90px]">Tentang Kami</h1>
               <p class="font-[600] text-[8px]  flex justify-center sm:text-[12px]">Tepat Sewa Solusi Kendaraan terbaik</p>
             </div>
-              <p class="font-[400] text-[10px] text-[#000] leading-[1rem] mt-4 pb-10 sm:text-[15px] sm:leading-[1.4rem]">Selamat datang di TepatSewa, platform penyewaan kendaraan terpercaya yang dirancang untuk memenuhi kebutuhan transportasi Anda. Kami memahami pentingnya mobilitas yang aman, nyaman, dan efisien, sehingga kami hadir sebagai solusi terbaik bagi Anda yang membutuhkan kendaraan untuk berbagai keperluan, mulai dari perjalanan bisnis, liburan keluarga, hingga kebutuhan mendesak lainnya.
+              <div data-aos="zoom-in-up"  data-aos-duration="1000"  data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                  <p class="font-[400] text-[10px] text-[#000] leading-[1rem] mt-4 pb-10 sm:text-[15px] sm:leading-[1.4rem]">Selamat datang di TepatSewa, platform penyewaan kendaraan terpercaya yang dirancang untuk memenuhi kebutuhan transportasi Anda. Kami memahami pentingnya mobilitas yang aman, nyaman, dan efisien, sehingga kami hadir sebagai solusi terbaik bagi Anda yang membutuhkan kendaraan untuk berbagai keperluan, mulai dari perjalanan bisnis, liburan keluarga, hingga kebutuhan mendesak lainnya.
 
-                Kami menawarkan berbagai pilihan kendaraan berkualitas, mulai dari mobil ekonomis hingga kendaraan premium, yang selalu dalam kondisi prima dan siap digunakan. Dengan proses pemesanan yang cepat dan mudah, kami memastikan Anda dapat menemukan kendaraan yang sesuai dengan kebutuhan Anda hanya dengan beberapa klik.
-                <br>
-                <br>
-                <span class="text-[0.8rem] font-[700] text-[#0284c7]">Visi Kami : </span>
-                <br>
-                Menjadi platform penyewaan kendaraan terkemuka di Indonesia yang mengutamakan kemudahan, kualitas, dan kepuasan pelanggan.
-                <br>
-                <br>
-                <span class="text-[0.8rem] font-[700] text-[#0284c7]">Misi Kami: </span>
-                <br>
-                Memberikan layanan penyewaan kendaraan yang terpercaya dan transparan.
-                
-                Menyediakan kendaraan dengan perawatan terbaik untuk menjamin keselamatan dan kenyamanan pelanggan.
-                
-                Memanfaatkan teknologi untuk memberikan pengalaman penyewaan yang cepat, mudah, dan efisien.
-                
-                Membangun hubungan jangka panjang dengan pelanggan melalui layanan yang ramah dan profesional.</p>
+                    Kami menawarkan berbagai pilihan kendaraan berkualitas, mulai dari mobil ekonomis hingga kendaraan premium, yang selalu dalam kondisi prima dan siap digunakan. Dengan proses pemesanan yang cepat dan mudah, kami memastikan Anda dapat menemukan kendaraan yang sesuai dengan kebutuhan Anda hanya dengan beberapa klik.
+                    <br>
+                    <br>
+                    <span class="text-[0.8rem] font-[700] text-[#0284c7]">Visi Kami : </span>
+                    <br>
+                    Menjadi platform penyewaan kendaraan terkemuka di Indonesia yang mengutamakan kemudahan, kualitas, dan kepuasan pelanggan.
+                    <br>
+                    <br>
+                    <span class="text-[0.8rem] font-[700] text-[#0284c7]">Misi Kami: </span>
+                    <br>
+                    Memberikan layanan penyewaan kendaraan yang terpercaya dan transparan.
+                    
+                    Menyediakan kendaraan dengan perawatan terbaik untuk menjamin keselamatan dan kenyamanan pelanggan.
+                    
+                    Memanfaatkan teknologi untuk memberikan pengalaman penyewaan yang cepat, mudah, dan efisien.
+                    
+                    Membangun hubungan jangka panjang dengan pelanggan melalui layanan yang ramah dan profesional.</p>
+              </div>
           </div>
         </div>
       </div>
@@ -140,14 +151,15 @@ $result = mysqli_query($db, $sql);
     <!-- layanan kami section start -->
     <section class="bg-white pb-[10rem]"  id="layanan">
       <div class="contiainer-layanan">
-        <div class="judul-layanan">
+        <div class="judul-layanan" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <h1 class="flex justify-center pt-[60px] font-[800] text-[1rem] text-[#0284c7] sm:text-[1.5rem] lg:text-[1.8rem] sm:pt-[90px]">Layanan Kami</h1>
           <p class="font-[600] text-[8px]  flex justify-center sm:text-[12px]">TepatSewa hadir untuk menjadi solusi bagi kamu</p>
         </div>
 
         <div class="card-layanan sm:flex sm:flex-wrap sm:mt-[2rem] ">
-          <div class="card-layanan-1 bg-white w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:scale-[1.1] duration-[0.2s] ease-in-out ">
-            <div class="card-layanan-1-content text-center ">
+          <div class="card-layanan-1 bg-white w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:scale-[1.1] duration-[0.2s] ease-in-out">
+            <div class="card-layanan-1-content text-center" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500"  data-aos-offset="200">
               <div class="flex justify-center pt-[10px]">
                 <div class="bg-[#0284c7] w-[4rem] flex h-[4rem] rounded-[50%] ">
                   <img src="./assets/harian.png" alt="" class="p-[15px]">
@@ -158,7 +170,7 @@ $result = mysqli_query($db, $sql);
             </div>
           </div>
 
-          <div class="card-layanan-1 bg-[#0284c7] w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:translate-y-4 hover:scale-[1.1] duration-[0.2s] ease-in-out">
+          <div class="card-layanan-1 bg-[#0284c7] w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:translate-y-4 hover:scale-[1.1] duration-[0.2s] ease-in-out" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1500"  data-aos-offset="200">
             <div class="card-layanan-1-content text-center">
               <div class="flex justify-center pt-[10px]">
                 <div class="bg-[#fff] w-[4rem] flex h-[4rem] rounded-[50%] ">
@@ -170,7 +182,7 @@ $result = mysqli_query($db, $sql);
             </div>
           </div>
 
-          <div class="card-layanan-1 bg-white w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:scale-[1.1] duration-[0.2s] ease-in-out">
+          <div class="card-layanan-1 bg-white w-[12rem] h-[12rem] mx-auto mt-[2rem] shadow-xl rounded-[6px] hover:scale-[1.1] duration-[0.2s] ease-in-out" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1500"  data-aos-offset="200">
             <div class="card-layanan-1-content text-center ">
               <div class="flex justify-center pt-[10px]">
                 <div class="bg-[#0284c7] w-[4rem] flex h-[4rem] rounded-[50%] ">
@@ -191,13 +203,14 @@ $result = mysqli_query($db, $sql);
     <!-- cara sewa section start -->
     <section class= "bg-[#e1e0e0] h-[60rem] lg:h-screen" id="tutorial">
       <div class="container-tutorial">
-        <div class="judul-tutorial mx-auto">
+        <div class="judul-tutorial mx-auto" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <h1 class="flex justify-center pt-[70px] font-[800] text-[1rem] text-[#0284c7] sm:text-[1.5rem] lg:text-[1.8rem] sm:pt-[90px]">Cara Pesan</h1>
           <p class="font-[600] text-[8px]  flex justify-center sm:text-[12px]">Ikuti langkah berikut untuk memesan layanan kami</p>
         </div>
 
         <div class="card-tutorial lg:flex sm:mt-[5rem]">
-          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg">
+          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
             <div class="card-layanan-1-content">
               <div class="bg-[#0284c7] w-[40px] h-[40px] flex justify-center items-center rounded-[50%] mt-[15px]">
                 <h1 class="font-[400] text-[#6ec1ea]">1</h1>
@@ -209,7 +222,7 @@ $result = mysqli_query($db, $sql);
             </div>
           </div>
 
-          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg">
+          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
             <div class="card-layanan-1-content">
               <div class="bg-[#0284c7] w-[40px] h-[40px] flex justify-center items-center rounded-[50%] mt-[15px]">
                 <h1 class="font-[400] text-[#6ec1ea]">2</h1>
@@ -221,7 +234,7 @@ $result = mysqli_query($db, $sql);
             </div>
           </div>
 
-          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg">
+          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
             <div class="card-tutorial-1-content">
               <div class="bg-[#0284c7] w-[40px] h-[40px] flex justify-center items-center rounded-[50%] mt-[15px]">
                 <h1 class="font-[400] text-[#6ec1ea]">3</h1>
@@ -233,7 +246,7 @@ $result = mysqli_query($db, $sql);
             </div>
           </div>
 
-          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg">
+          <div class="card-tutorial-1 bg-[#e8e7e7] w-[14rem] sm:w-[27rem] lg:w-[14rem] h-[10rem] p-[10px] mx-auto mt-[20px] shadow-lg" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
             <div class="card-tutorial-1-content">
               <div class="bg-[#0284c7] w-[40px] h-[40px] flex justify-center items-center rounded-[50%] mt-[15px]">
                 <h1 class="font-[400] text-[#6ec1ea]">4</h1>
@@ -253,14 +266,15 @@ $result = mysqli_query($db, $sql);
     <section id="kendaraan" class="bg-white">
       <div class="pb-11">
         <div class="container-kendaraan">
-            <div class="judul-kendaraan mx-auto">
+            <div class="judul-kendaraan mx-auto" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <h1 class="flex justify-center pt-[70px] font-[800] text-[1rem] text-[#0284c7] sm:text-[1.5rem] lg:text-[1.8rem] sm:pt-[90px]">Kendaraan</h1>
               <p class="font-[600] text-[8px]  flex justify-center sm:text-[12px]">Jelajahi berbagai pilihan kendaraan yang kami sediakan.</p>
             </div>
 
             <div class="card-kendaraan">
               <div class="flex flex-wrap justify-center gap-[20px]">
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/toyota.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">Toyota New Venturer</p>
@@ -269,7 +283,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/calya.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Calya</p>
@@ -278,7 +292,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/fortuner.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Fortuner</p>
@@ -287,7 +301,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/voxy.jpg" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Voxy</p>
@@ -296,7 +310,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/veloz.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Veloz</p>
@@ -305,7 +319,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/innova.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Innova</p>
@@ -314,7 +328,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200" >
                   <img src="./assets/agya.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Agya</p>
@@ -323,7 +337,7 @@ $result = mysqli_query($db, $sql);
                   </div>
                 </div>
 
-                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]">
+                <div class="card-kendaraan-content shadow-lg w-[9rem] sm:w-[10rem] lg:w-[16rem] flex flex-wrap justify-center mt-[20px]  hover:grayscale-[0.8] hover:scale-[1.1] duration-[0.2s]" data-aos="flip-up"  data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                   <img src="./assets/sienta.webp" alt="" class="w-[8rem] sm:w-[10rem] lg:w-[15rem] ">
                   <div class="lg:w-[12rem] px-auto">    
                     <p class="text-[12px] font-[600] mt-[20px] text-[#0284c7] md:text-[14]">New Sienta</p>
@@ -343,7 +357,8 @@ $result = mysqli_query($db, $sql);
       <section id="testimonial ">
         <div class= "bg-[#e1e0e0] flex flex-col pb-[5rem]" id="testimonial">
           <div class="container-testimonial">
-            <div class="judul-testimonial mx-auto">
+            <div class="judul-testimonial mx-auto" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <h1 class="flex justify-center pt-[70px] font-[800] text-[1rem] text-[#0284c7] sm:text-[1.5rem] lg:text-[1.8rem] sm:pt-[90px]">Testimonial</h1>
               <p class="font-[600] text-[8px]  flex justify-center sm:text-[12px]"> Cerita pengalaman pelanggan kami.</p>
             </div>
@@ -352,7 +367,7 @@ $result = mysqli_query($db, $sql);
                 <div class="card-testimonial mt-[20px]">
                  <div class="flex flex-wrap gap-9">
                      <?php while ($row = mysqli_fetch_assoc($result)) : ?>
-                        <div class="card-testimonial-content bg-white shadow-lg w-[15rem] mx-auto">
+                        <div class="card-testimonial-content bg-white shadow-lg w-[15rem] mx-auto"  data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-duration="500"  data-aos-offset="200">
                           <div class="flex space-x-4">
                               <p class="w-[40px] mt-[10px] flex justify-center items-center rounded-[50%] h-[40px] ml-[10px] bg-[#0284c7] text-[20px]">👨🏻</p>
                               <h1 class=" flex items-center  font-[700] text-[#0284c7]"><?php echo htmlspecialchars($row['name']); ?></h1>
@@ -361,7 +376,7 @@ $result = mysqli_query($db, $sql);
                               <p class="text-[10px] w-[10rem]  px-[10px]  break-words"><?php echo htmlspecialchars($row['message']); ?></p>
                           </div>
                         </div>
-                        <?php endwhile; ?> 
+                      <?php endwhile; ?> 
                   </div>
               </div>
           </div>
@@ -521,6 +536,13 @@ $result = mysqli_query($db, $sql);
     <p class="text-xs text-gray-500">&copy; 2024. TepatSewa. All rights reserved.</p>
   </div>
 </footer>
+
+  <!-- SCRIPT AOS ANIMATION -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- SCRIPT AOS  ANIMATION -->
 
     <script src="script.js"></script>
 </body>
